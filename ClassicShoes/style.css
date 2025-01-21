@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+header{
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    background-color: chocolate;
+    padding: 5px 0px;
+    color: beige;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu ul li{
+    text-decoration: none;
+    padding-left: 25px;
+    list-style-type: none;
+    
+}
+
+.menu ul{
+    display: flex;
+    text-decoration: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: beige;
+    text-transform: uppercase;
+}
+
+#foto-loja{
+    aspect-ratio: 3/2;
+    max-width: 500px;
+}
+
+.sobre_loja{
+    display: grid;
+    grid-template-columns: 650px 550px;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+
+.title{
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    border-bottom: 2px solid chocolate;
+    color: chocolate;
+    text-align: start;
+}
+
+#copy{
+    align-items: center;
+    text-align: justify;
+    margin-top: 50px;
+    font-size: 17px;
+}
+
+#produto{
+    margin: 50px 280px 0px 125px;
+}
+
+.container-product{
+    display:grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    margin-left: 65px;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.img-sapato{
+    aspect-ratio: 3/2;
+    max-width: 200px;
+}
+
+p{
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.card{
+    padding: 10px;
+    font-weight: bold;
+}
+
+button{
+    background-color: rgb(21, 182, 21);
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    width: 60%;
+    height: 25px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1023px) {
+
+    .container{
+        width: 1024px;
+        max-width: 100%;
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    #foto-loja{
+        aspect-ratio: 3/2;
+        max-width: 500px;
+        margin-top: 20px;
+    }
+    
+    .sobre_loja{
+        display: grid;
+        grid-template-columns: 500px;
+        grid-template-rows: 360px 300px;
+        max-width: 500px;
+        margin: 0px;
+    }
+
+    #copy{
+        margin-top: 0px;
+    }
+
+    .container-product{
+        display:grid;
+        grid-template-columns: 300px 300px;
+        grid-auto-rows: 300px;
+        margin-left: 0px;
+        margin-top: 30px;
+        padding: 0px;
+    }
+
+    .title{
+        margin-top: 10px;
+    }
+
+    #produto{
+        width: 100%;
+        max-width: 640px;
+        margin: 20px 130px 0px 130px;
+    }
+}
+
+@media screen and (max-width:640px) {
+
+    *{
+        font-size: 14px;
+    }
+    .container{
+        width: 640px;
+        max-width: 100%;
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #foto-loja{
+        aspect-ratio: 3/2;
+        max-width: 350px;
+        margin-top: 20px;
+    }
+
+    .sobre_loja{
+        display: grid;
+        grid-template-columns: 350px;
+        grid-template-rows: 260px 420px;
+        max-width: 350px;
+        margin: 0px;
+    }
+
+    .container-product {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+}
