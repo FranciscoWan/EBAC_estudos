@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Oswald:wght@200..700&display=swap');
+    </style>
+</head>
+<body>
+    <header class="topo">
+        <nav class="menu">
+            <h3 class="nome_menu">
+                HOME
+            </h3>
+            <h3 class="nome_menu">
+                PRODUTOS
+            </h3>
+            <h3 class="nome_menu">
+                PROMOÇÕES
+            </h3>
+            <h3 class="nome_menu">
+                SOBRE NÓS
+            </h3>
+        </nav>
+    </header>
+    <div class="container">
+        <form class="formulario">
+            <fieldset>
+                <legend><b>FALE CONOSCO</b></legend>
+                <br>
+                <div class="campo_formulario">
+                    <input type="text" name="nome" class ="inputUser" required/>
+                    <label for="nome" class="labelInput">Nome completo</label>
+                    <br>
+                </div>
+                <div class="campo_formulario">
+                    <input type="text" name="email" class ="inputUser" required/>
+                    <label for="email" class="labelInput">e-mail</label>
+                    <br>
+                </div>
+                <div class="campo_formulario">
+                    <textarea type="text" name="conte-nos mais" class ="inputUser" required></textarea>
+                    <label for="conte-nos mais" class="labelInput">Conte-nos mais</label>
+                </div>
+                <input type="submit" id="submit">
+            </fieldset>
+        </form>
+    </div> 
+</body>
+</html>

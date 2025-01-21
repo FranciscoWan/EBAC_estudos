@@ -1,0 +1,111 @@
+body{
+    height: 100vh;
+    margin: auto;
+    padding: auto;
+    border: 0;
+    background-image: url(./Imagens/entre_em_contato.png);
+    background-color: aliceblue;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 12% 50%;
+}
+
+header.topo{
+    margin-top: 8px;
+}
+
+div.container{
+    height: 100vh;
+    display: flex;
+    margin-top: 15%;
+    margin-left: 60%;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color:rgb(232, 232, 232);
+    margin: 10px, 0px;
+    font-size:large;
+}
+
+form,
+fieldset{
+    width: 500px;
+    height: 460px;
+    border-radius: 20px;
+}
+
+fieldset{
+    background-color: rgba(128, 128, 128, 0.26);
+}
+
+form textarea{
+    resize: none;
+    height: 80px;
+}
+
+legend{
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(232, 232, 232);
+    padding: 1px;
+    border-radius: 5px;
+    font-size: 35px;
+    text-align: center;
+    align-items: center;
+    font-family: "Oswald", sans-serif;
+
+}
+
+div.campo_formulario{
+    padding: 8px;
+    height: max-content;
+    width: max-content;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-family: "Oswald", sans-serif;
+    
+}
+
+.campo_formulario{
+    position: relative;    
+    font-size: 25px;
+    font-family: "Oswald", sans-serif;
+    
+}
+
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    color: black;
+    font-size: 25px;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 20px;
+    color: grey;
+}
+
+#submit{
+    background-color: aliceblue;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 10px;
+    height: 55px;
+}
