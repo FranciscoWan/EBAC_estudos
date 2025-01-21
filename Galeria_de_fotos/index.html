@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <header>
+        <h1>Galeria de fotos</h1>
+        <button type="button">Nova imagem +</button>
+    </header>
+    <form>
+        <h2>Inserir nova imagem</h2>
+        <input type="url" id="endereço_imagem_nova" required placeholder="url da imagem"/>
+        <button type="submit">Adicionar</button>
+        <button type="reset" id="botao_cancelar">Cancelar</button>
+    </form>
+    <ul>
+        <li>
+            <img src="./images/foto1.jpg" alt="Pintura de um gato"/>
+            <div class="overlay_imagem_link">
+                <a href="./images/foto1.jpg" title="Ver imagem em tamanho real" target="_blank">Ver imagem em tamanho real</a>
+            </div>
+        </li>
+        <li>
+            <img src="./images/foto2.jpg" alt="Foto de um flamingo"/>
+            <div class="overlay_imagem_link">
+                <a href="./images/foto2.jpg" title="Ver imagem em tamanho real" target="_blank">Ver imagem em tamanho real</a>
+            </div>
+        </li>
+        <li>
+            <img src="./images/foto3.jpg" alt="Dois cachorros filhotes em um saco"/>
+            <div class="overlay_imagem_link">
+                <a href="./images/foto3.jpg" title="Ver imagem em tamanho real" target="_blank">Ver imagem em tamanho real</a>
+            </div>
+        </li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
