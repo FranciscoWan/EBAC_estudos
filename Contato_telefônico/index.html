@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista telefônica</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lista telefônica</h1>
+        </header>
+        <form id="campo_input">
+            <input type="text" class="inputUser" id="nome_contato" required/>
+            <label class="labelContato" id="contato">Nome do contato</label>
+            <input type="number" class="inputUser" id="numero_contato" required/>
+            <label class="labelNumero" id="numero">Número</label>
+            <button type="submit">Salvar contato</button>
+            <title>Contatos</title>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Número</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
