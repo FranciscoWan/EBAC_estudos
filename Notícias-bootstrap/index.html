@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <header id="#cabecalho">
+            <div class="navbar navbar-expand-lg">
+                <div class="container">
+                    <h1>Notícias</h1>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                        <ul class="nav nav-pills navbar-nav">
+                            <li class="nav-item">
+                                <a href="#home" class="nav-link active">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#destaque" class="nav-link">Destaques</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>      
+        </header>
+        <main>
+            <div id="home" class="container-center">
+                <section class="carousel-info">
+                    <div id="carousel-news" class="carousel slide carousel-container carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div data-bs-interval="3000" class="carousel-item active">
+                                <img class="img-carousel" src="./images/deepseek-1280x640.png" alt="Deepseek, nova empresa de tecnologia IA">
+                                <div class="carousel-caption">
+                                    <h2 class="caption-img">Nova Gigante da IA</h2>
+                                </div>
+                            </div>
+                            <div data-bs-interval="3000" class="carousel-item">
+                                <img class="img-carousel" src="./images/gabriel-bortoleto-1280x640.png" alt="Gabriel Bortoleto">
+                                <div class="carousel-caption">
+                                    <h2 class="caption-img">Brasileiro estreia na F1 em 2025</h2>
+                                </div>
+                            </div>
+                            <div data-bs-interval="3000" class="carousel-item">
+                                <img class="img-carousel" src="./images/crise-preço-alimentos-1280x640.png" alt="Mercado de compras">
+                                <div class="carousel-caption">
+                                    <h2 class="caption-img">Inflação piora preços dos alimentos</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <button data-bs-target="#carousel-news" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button data-bs-target="#carousel-news" data-bs-slide="next" class="carousel-control-next" type="button">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                        <div class="carousel-indicators">
+                            <button class="active" type="button" data-bs-target="#carousel-news" data-bs-slide-to="0"></button>
+                            <button type="button" data-bs-target="#carousel-news" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#carousel-news" data-bs-slide-to="2"></button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div id="destaque" class="container-center" data-bs-spy="scroll" data-bs-target="#cabecalho">
+                <h2>Destaques</h2>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Deepseek a nova gigante da IA</h3>
+                            </div>
+                            <div class="img">
+                                <img class="card-img" src="./images/deepseek-1280x640.png" alt="Deepseek, nova empresa de tecnologia IA">
+                            </div>
+                            <div class="card-body">
+                                <h4>Nova empresa Chinesa entra no mercado de IA's competindo com Openai.</h4>
+                                <a href="#" class="btn btn-primary">Ler mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Brasileiro estreia na F1 em 2025</h3>
+                            </div>
+                            <div class="img">
+                                <img class="card-img" src="./images/gabriel-bortoleto-1280x640.png" alt="Gabriel Bortoleto">
+                            </div>
+                            <div class="card-body">
+                                <h4>Brasil está bem representado com Gabriel Bortoleto estreando na fórmula 1.</h4>
+                                <a href="#" class="btn btn-primary">Ler mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Alta dos preços dos alimentos preocupa brasileiros</h3>
+                            </div>
+                            <div class="img">
+                                <img class="card-img" src="./images/crise-preço-alimentos-1280x640.png" alt="Mercado de compras">
+                            </div>
+                            <div class="card-body">
+                                <h4>Desconfiança no governo se agrava com o aumento dos preços dos alimentos.</h4>
+                                <a href="#" class="btn btn-primary">Ler mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2025 Notícias</p>
+    </footer>
+    <script src="./bootstrap.bundle.min.js"></script>
+</body>
+</html>
